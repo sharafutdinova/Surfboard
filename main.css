@@ -141,13 +141,13 @@ a {
 }
 
 .learn-more_button {
-    background: #FF3D00;
+    background: #FF5500;
     border-radius: 35px;
     padding: 18px 53px;
     font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
-    border-color: #FF3D00;
+    border-color: #FF5500;
     font-size: 14px;
 }
 
