@@ -286,6 +286,9 @@ a {
 .paginator_item {
     display: inline-block;
     vertical-align: middle;
+}
+
+.paginator_link {
     text-decoration: none;
 }
 
