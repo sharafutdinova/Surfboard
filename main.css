@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background: url("./img/hero.png") center top no-repeat, #17191C center center;
+    background: url("./img/hero.png") center top no-repeat, #17191C;
     color: #060606;
     font-size: 16px;
     line-height: 1.42;
@@ -9,15 +9,15 @@ body {
     -moz-osx-font-smoothing: grayscale
 }
 
-.wrapper {
+.services {
+    background: url("./img/bottom-pic.png") center bottom 307px no-repeat;
+}
+
+.container {
     margin: 0 auto;
     width: 1150px;
     align-content: center;
-    background: #17191C;
     color: #060606;
-}
-.services{
-    background: url("./img/bottom-pic.png") center bottom 307px no-repeat;
 }
 
 ul {
@@ -149,6 +149,11 @@ a {
     color: #FFFFFF;
     border-color: #FF3D00;
     font-size: 14px;
+}
+
+.learn-more_button:hover {
+    background: #FF3D00;
+    color: #FFFFFF;
 }
 
 .btn-color-white {
@@ -302,7 +307,8 @@ a {
     border-radius: 50%;
     text-decoration: none;
 }
-.paginator_list{
+
+.paginator_list {
     text-decoration: none;
 }
 
@@ -418,4 +424,20 @@ a {
 
 .network_icon_Inst .social_networks_item_link {
     background: url("./img/in.png");
+}
+
+.network_icon_Telegram .social_networks_item_link:hover {
+    background: url("./img/t.png");
+}
+
+.network_icon_VK .social_networks_item_link:hover {
+    background: url("./img/vkh.png");
+}
+
+.network_icon_Facebook .social_networks_item_link :hover {
+    background: url("./img/f2.png");
+}
+
+.network_icon_Inst .social_networks_item_link:hover {
+    background: url("./img/in2.png");
 }
