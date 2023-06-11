@@ -326,7 +326,7 @@ a {
     vertical-align: top;
     width: 490px;
     height: 505px;
-    background: url("/img/cameraman.png") center center/ cover no-repeat;
+    background: url("./img/cameraman.png") center center/ cover no-repeat;
 }
 
 .about-us_description {
