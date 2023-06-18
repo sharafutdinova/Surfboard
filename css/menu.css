@@ -1,0 +1,29 @@
+.menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.menu_item {
+    margin-right: 60px;
+}
+
+.menu_item-active .menu_title {
+    color: #FF3D00;
+
+}
+
+.menu_item:last-child {
+    margin-right: 0;
+}
+
+.menu_title {
+    font-size: 13px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu_title:hover {
+    color: #FF3D00;
+}
