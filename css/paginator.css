@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.paginator-theme-light{
+    color:black;
+    margin-top: 46px;
+    margin-bottom: 55px;
+}
+
 .paginator_link {
     text-decoration: none;
 }

@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background: #17191C;
     color: #060606;
     font-size: 16px;
     line-height: 1.42;
@@ -20,6 +19,10 @@ html {
     min-height: 100%;
     overflow: hidden;
     min-width: 1200px;
+}
+
+.services-page-wrapper {
+    background: url("../img/top-line.png") center top no-repeat;
 }
 
 .container {
@@ -54,4 +57,9 @@ h6 {
 
 a {
     color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }

@@ -13,7 +13,7 @@
     flex: 1.5;
 }
 
-.header_col--align--right{
+.header_col--align--right {
     justify-content: flex-end;
     flex: 1;
 }
@@ -28,18 +28,11 @@
     margin-left: 180px;
 }
 
-.services_page_header,
-.services_header-title {
-    width: 780px;
+.page_title {
     font-size: 72px;
-    color: #FFFFFF;
     font-weight: 800;
-    margin-bottom: 14px;
+    line-height: 1;
+    margin-top: 125px;
+    margin-bottom: 95px;
     text-transform: uppercase;
-    margin-left: 180px;
-}
-
-.services-section .header {
-    height: 416px;
-    margin-bottom: 80px;
 }

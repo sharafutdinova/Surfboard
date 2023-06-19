@@ -1,6 +1,8 @@
 .footer_container {
     height: 146px;
     border-top: 1px solid #FFFFFF;
+    background: #17191C;
+    width: 100%;
 }
 
 .footer {
