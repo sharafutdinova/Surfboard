@@ -1,0 +1,87 @@
+.reviews_main-content {
+    padding: 90px 0 35px;
+}
+
+.reviews {
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.reviews_item {
+    margin-bottom: 20px;
+}
+
+.review {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 55px 40px 25px 24px;
+    background-color: #F4F5F5;
+}
+
+.review_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 142px;
+    height: 142px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review_user {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1A1B1E;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-bottom: 7px;
+}
+
+.review_user:hover {
+    color: #2E77A4;
+    text-decoration: underline;
+}
+
+.review_user::after {
+    content: url("../img/vk-blue.png");
+    height: 30px;
+}
+
+.review_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #202020;
+    margin-bottom: 22px;
+    max-width: 457px;
+}
+
+.review_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #818181;
+    margin-bottom: 35px;
+    line-height: 27px;
+}
+
+.review_date {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1B1E;
+}
+
+.reviews-inner-section {
+    padding: 80px 0 100px;
+}
+
+.reviews-section_title {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}

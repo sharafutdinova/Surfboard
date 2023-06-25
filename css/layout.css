@@ -21,7 +21,7 @@ html {
     min-width: 1200px;
 }
 
-.services-page-wrapper {
+.services-page-wrapper, .reviews-page-wrapper {
     background: url("../img/top-line.png") center top no-repeat;
 }
 

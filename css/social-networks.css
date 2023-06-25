@@ -17,38 +17,45 @@
     text-decoration: none;
     width: 36px;
     height: 36px;
-    background: center center no-repeat;
     position: relative;
 }
 
-.network_icon_Telegram .social_networks_item_link {
-    background: url("../img/telegram.png");
+.social_networks_item_link::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.network_icon_Telegram .social_networks_item_link {
+    background: url("../img/t.png") -66px -10px;
+}
+
+
 .network_icon_VK .social_networks_item_link {
-    background: url("../img/vk.png");
+    background: url("../img/vk.png") -10px -10px;
 }
 
 .network_icon_Facebook .social_networks_item_link {
-    background: url("../img/f.png");
+    background: url("../img/f.png") -66px -10px;
 }
 
 .network_icon_Inst .social_networks_item_link {
-    background: url("../img/in.png");
+    background: url("../img/in.png") -10px -10px;
 }
 
 .network_icon_Telegram .social_networks_item_link:hover {
-    background: url("../img/t.png");
+    background: url("../img/t.png") -10px -10px;
 }
 
 .network_icon_VK .social_networks_item_link:hover {
-    background: url("../img/vkh.png");
+    background: url("../img/vk.png") -66px -10px;
 }
 
-.network_icon_Facebook .social_networks_item_link :hover {
-    background: url("../img/f2.png");
+.network_icon_Facebook .social_networks_item_link:hover {
+    background: url("../img/f.png") -10px -10px;
 }
 
 .network_icon_Inst .social_networks_item_link:hover {
-    background: url("../img/in2.png");
+    background: url("../img/in.png") -66px -10px;
 }

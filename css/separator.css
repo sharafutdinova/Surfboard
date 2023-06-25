@@ -1,0 +1,21 @@
+.separator {
+    background: #373737 url("../img/Прямоугольник.png") center center no-repeat;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.separator_container {
+    max-width: 48%;
+}
+
+.separator_title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.separator_red_title {
+    color: #FF5400;
+}
