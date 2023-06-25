@@ -43,4 +43,5 @@
 
 .paginator_item:hover {
     background-color: #FF3D00;
+    transition: background .5s;
 }

@@ -46,6 +46,7 @@
 .review_user:hover {
     color: #2E77A4;
     text-decoration: underline;
+    transition: color .2s;
 }
 
 .review_user::after {

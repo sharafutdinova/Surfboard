@@ -22,5 +22,7 @@
 
 .btn:hover {
     background: #FF3D00;
-    color: #FFFFFF;
+    color: #FFFFFF;    
+    transition: color .5s;
+    transition: background .5s;
 }

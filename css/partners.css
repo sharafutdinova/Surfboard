@@ -27,6 +27,7 @@
 
 .partners_link:hover {
     filter: grayscale(80%);
+    transition: filter .3s;
 }
 
 .partners_image {

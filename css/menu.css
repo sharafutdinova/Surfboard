@@ -26,4 +26,5 @@
 
 .menu_title:hover {
     color: #FF3D00;
+    transition: color .5s;
 }
