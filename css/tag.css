@@ -15,5 +15,9 @@
 
 .tag-bg-pink {
     background-color: #F2D4C9;
+}
 
+.tag:hover {
+    background: #F2D4BC;
+    transition: background 0.2s;
 }
