@@ -22,3 +22,12 @@
     font-weight: 400;
     color: #9A9A9A;
 }
+.contacts_work_days {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contacts_lunch_time {
+    font-size: 13px;
+    font-weight: 600;
+}
