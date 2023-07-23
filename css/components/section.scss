@@ -1,0 +1,15 @@
+.section{
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.section__title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
