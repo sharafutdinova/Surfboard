@@ -1,0 +1,27 @@
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    line-height: 1;
+    background: #FEDB3F;
+    color: black;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        background: #ffa202;
+    }
+
+    &--theme--transparent {
+        background: transparent;
+        color: white;
+        text-transform: none;
+        font-weight: 400;
+
+        &:hover {
+            background: #5e5c59;
+        }
+    }
+}
