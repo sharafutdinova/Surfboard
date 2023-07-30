@@ -1,15 +1,29 @@
-.section{
-    min-height: 650px;
+.section {
+    min-height: rem(650px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 0;
+    padding: rem(100px) 0;
+    height: 70vh;
+
+    @include tablets {
+        height: 104vh;
+    }
+
+    @include phones {
+        height: 76vh;
+        padding: 0;
+    }
 }
 
-.section__title{
-    font-size: 48px;
-    font-weight: bold;
+.section__title {
+    font-size: rem(48px);
+    font-weight: 700;
     text-align: center;
     color: black;
     text-transform: uppercase;
+
+    @include phones {
+        font-size: rem(40px);
+    }
 }

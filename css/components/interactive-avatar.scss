@@ -1,20 +1,31 @@
 .interactive-avatar {
-    width: 80px;
-    height: 80px;
+    width: rem(80px);
+    height: rem(80px);
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    margin-right: 0px;
+    margin-right: rem(0px);
 
     &--active {
-        border: 6px solid transparent;
+        border: rem(6px) solid transparent;
         border-color: $yellow;
-        width: 74px;
-        height: 74px;
+        width: rem(74px);
+        height: rem(74px);
     }
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include phones {
+        width: rem(65px);
+        height: rem(65px);
+        margin-right: rem(10px);
+
+        &--active {
+            width: rem(63px);
+            height: rem(63px);
+        }
     }
 }
 

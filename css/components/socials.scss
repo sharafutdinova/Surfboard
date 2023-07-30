@@ -1,0 +1,47 @@
+.socials {
+    display: flex;
+}
+
+.social__item {
+    justify-content: space-between;
+    padding: 0 rem(7px);
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+// .social__item__link {
+//     width: rem(24px);
+//     height: rem(24px);
+// }
+
+.social__item__link-vk {
+    width: rem(24px);
+    height: rem(24px);
+    background: url("../img/socials.png") -54px -54px no-repeat;
+}
+
+.social__item__link-f {
+    width: rem(24px);
+    height: rem(24px);
+    background: url("../img/socials.png") -10px -10px no-repeat;
+}
+
+// .social__item__link-f:hover {
+//     width: rem(24px);
+//     height: rem(24px);
+//     background: url("../img/socials.png") -98px -10px;
+// }
+
+.social__item__link-in {
+    width: rem(24px);
+    height: rem(24px);
+    background: url("../img/socials.png") -54px -10px no-repeat;
+}
+
+.social__item__link-tv {
+    width: rem(24px);
+    height: rem(24px);
+    background: url("../img/socials.png") -10px -54px no-repeat;
+}

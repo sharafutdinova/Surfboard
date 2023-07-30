@@ -1,3 +1,7 @@
+html {
+    font-size: $baseFontSize;
+}
+
 body,
 html {
     height: 100%;
@@ -5,7 +9,6 @@ html {
 
 body {
     font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
-    font-size: $baseFontSize;
     color: $grey;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -16,14 +19,14 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
     margin: 0 auto;
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
 }
 
 ul {

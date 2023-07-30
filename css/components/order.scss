@@ -1,10 +1,18 @@
 .order-section {
     background: url("../img/order.png") center center / cover no-repeat;
     color: white;
-    padding: 55px 0;
-    min-height: 652px;
+    padding: rem(55px) 0;
+    height: 70vh;
 
     .section__title {
         color: inherit;
+    }
+
+    @include tablets {
+        height: 103vh;
+    }
+
+    @include phones {
+        height: 82vh;
     }
 }
