@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $grey: #666666;
 $light-grey: #F8FAF9;
@@ -8,6 +12,8 @@ $yellow: #FEDB3F;
 
 //z-indexes
 $z-fixed-menu:100;
+
+@import "media";
 
 //normalize
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
@@ -32,3 +38,8 @@ $z-fixed-menu:100;
 @import "./components/order";
 @import "./components/radio";
 @import "./components/fixed-menu";
+@import "./components/menu";
+@import "./components/hamburger";
+@import "./components/map";
+@import "./components/footer";
+@import "./components/socials";

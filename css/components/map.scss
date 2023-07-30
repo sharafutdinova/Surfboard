@@ -1,0 +1,21 @@
+.map__section {
+    height: 80vh;
+
+    @include tablets {
+        height: 66vh;
+    }
+}
+
+#map {
+    display: flex;
+    background: url("../img/map.png") center center / cover no-repeat;
+    height: 70vh;
+
+    @include tablets {
+        height: 60vh;
+    }
+
+    @include phones {
+        height: 50vh;
+    }
+}

@@ -1,0 +1,31 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: rem(90px);
+    background: white;
+    color: black;
+    font-size: rem(21px);
+    @include phones {
+        height: rem(150px);
+    }
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(10px) 0 rem(10px) 0;
+
+    @include phones {
+        flex-direction: column;
+        padding-top: rem(22px);
+    }
+}
+
+.phone-number--theme--black {
+    @include phones {
+        padding: rem(5px) rem(50px);
+    }
+}
