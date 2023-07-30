@@ -640,31 +640,30 @@ img {
     padding: 0.2777777778rem 2.7777777778rem; } }
 
 .socials {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .social__item {
-  justify-content: space-between;
   padding: 0 0.3888888889rem; }
   @media screen and (max-width: 480px) {
     .social__item {
       flex-direction: column; } }
 
-.social__item__link-vk {
+.social__item__link {
   width: 1.3333333333rem;
-  height: 1.3333333333rem;
-  background: url("../img/socials.png") -54px -54px no-repeat; }
+  height: 1.3333333333rem; }
+
+.social__item__link-vk {
+  background: url("../img/socials.png") -54px -54px; }
 
 .social__item__link-f {
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
-  background: url("../img/socials.png") -10px -10px no-repeat; }
+  background: url("../img/socials.png") -10px -10px; }
+
+.social__item__link-f:hover {
+  background: url("../img/socials.png") -98px -10px; }
 
 .social__item__link-in {
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
-  background: url("../img/socials.png") -54px -10px no-repeat; }
+  background: url("../img/socials.png") -54px -10px; }
 
 .social__item__link-tv {
-  width: 1.3333333333rem;
-  height: 1.3333333333rem;
-  background: url("../img/socials.png") -10px -54px no-repeat; }
+  background: url("../img/socials.png") -10px -54px; }
