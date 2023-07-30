@@ -4,6 +4,7 @@
 }
 
 .social__item {
+    display: flex;
     padding: 0 rem(7px);
 
     @include phones {

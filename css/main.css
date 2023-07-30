@@ -644,6 +644,7 @@ img {
   justify-content: space-between; }
 
 .social__item {
+  display: flex;
   padding: 0 0.3888888889rem; }
   @media screen and (max-width: 480px) {
     .social__item {
