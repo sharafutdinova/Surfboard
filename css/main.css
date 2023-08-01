@@ -155,6 +155,10 @@ img {
   width: 0.7222222222rem;
   height: 0.7222222222rem;
   margin-right: 0.6666666667rem; }
+  .phone-number__icon-elem:hover {
+    fill: grey;
+    color: brown;
+    background: blue; }
 
 .features {
   display: flex; }

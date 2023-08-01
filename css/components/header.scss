@@ -2,16 +2,18 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
     @include tablets {
         margin-top: rem(-90px);
     }
 }
 
-.head__panel{
+.head__panel {
     display: none;
     background: #1968B1;
     height: rem(90px);
     width: 100%;
+
     @include tablets {
         display: flex;
     }
@@ -39,8 +41,10 @@
     width: rem(13px);
     height: rem(13px);
     margin-right: rem(12px);
-}
 
-.phone-number__icon-elem:hover {
-    fill: grey;
+    &:hover {
+        fill: grey;
+        color: brown;
+        background: blue;
+    }
 }
