@@ -643,6 +643,8 @@ img {
     padding: 0.2777777778rem 2.7777777778rem; } }
 .phone-number--theme--black:hover {
   color: grey; }
+  .phone-number--theme--black:hover .phone-number__icon-elem {
+    fill: grey; }
 
 .socials {
   display: flex;
