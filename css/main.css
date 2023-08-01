@@ -641,6 +641,8 @@ img {
 @media screen and (max-width: 480px) {
   .phone-number--theme--black {
     padding: 0.2777777778rem 2.7777777778rem; } }
+.phone-number--theme--black:hover {
+  color: grey; }
 
 .socials {
   display: flex;
