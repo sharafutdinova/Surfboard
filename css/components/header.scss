@@ -41,13 +41,9 @@
     width: rem(13px);
     height: rem(13px);
     margin-right: rem(12px);
-    fill: darkcyan;
-    color: chartreuse;
-    background: magenta;
+    fill: black;
 
     &:hover {
         fill: grey;
-        color: brown;
-        background: blue;
     }
 }

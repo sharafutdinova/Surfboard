@@ -155,13 +155,9 @@ img {
   width: 0.7222222222rem;
   height: 0.7222222222rem;
   margin-right: 0.6666666667rem;
-  fill: darkcyan;
-  color: chartreuse;
-  background: magenta; }
+  fill: black; }
   .phone-number__icon-elem:hover {
-    fill: grey;
-    color: brown;
-    background: blue; }
+    fill: grey; }
 
 .features {
   display: flex; }
