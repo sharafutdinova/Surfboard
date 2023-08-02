@@ -155,9 +155,9 @@ img {
   width: 0.7222222222rem;
   height: 0.7222222222rem;
   margin-right: 0.6666666667rem;
-  fill: black; }
+  fill: #B3B3B3; }
   .phone-number__icon-elem:hover {
-    fill: grey; }
+    fill: black; }
 
 .features {
   display: flex; }
@@ -638,13 +638,15 @@ img {
       flex-direction: column;
       padding-top: 1.2222222222rem; } }
 
-@media screen and (max-width: 480px) {
-  .phone-number--theme--black {
-    padding: 0.2777777778rem 2.7777777778rem; } }
-.phone-number--theme--black:hover {
-  color: grey; }
-  .phone-number--theme--black:hover .phone-number__icon-elem {
-    fill: grey; }
+.phone-number--theme--black {
+  color: #B3B3B3; }
+  @media screen and (max-width: 480px) {
+    .phone-number--theme--black {
+      padding: 0.2777777778rem 2.7777777778rem; } }
+  .phone-number--theme--black:hover {
+    color: black; }
+    .phone-number--theme--black:hover .phone-number__icon-elem {
+      fill: black; }
 
 .socials {
   display: flex;

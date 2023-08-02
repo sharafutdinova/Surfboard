@@ -26,15 +26,18 @@
 }
 
 .phone-number--theme--black {
+
+    color: #B3B3B3;
+
     @include phones {
         padding: rem(5px) rem(50px);
     }
 
     &:hover {
-        color: grey;
+        color: black;
 
         .phone-number__icon-elem {
-            fill: grey;
+            fill: black;
         }
     }
 }
