@@ -1,0 +1,18 @@
+.shop {
+    height: 70vh;
+    background: #F8FAF9;
+
+    @include tablets {
+        height: 103vh;
+    }
+
+    @include phones {
+        height: 80vh;
+    }
+}
+
+.shop_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

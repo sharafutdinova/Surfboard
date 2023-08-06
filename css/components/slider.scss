@@ -1,0 +1,167 @@
+.slider_container {
+    margin: 0 4%;
+
+    @include tablets {
+        margin: 0;
+    }
+}
+
+.slider {
+    height: 70vh;
+    padding: rem(50px) 0;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.item__content {
+    padding-left: rem(60px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+}
+
+.item__image-wrapper {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include tablets {
+        padding-left: 10%;
+    }
+}
+
+.item__image {
+    max-width: 100%;
+
+    @include tablets {
+        max-width: 66%;
+    }
+}
+
+.item__title {
+    color: black;
+    text-transform: uppercase;
+    font-size: rem(36px);
+    font-weight: 700;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+        font-size: rem(30px);
+        padding-bottom: 2%;
+    }
+
+    @include phones {
+        padding-top: 5%;
+    }
+}
+
+.item__text {
+    line-height: rem(21.6px);
+    margin-bottom: 7%;
+
+    @include tablets {
+        text-align: center;
+        margin-bottom: 4%;
+    }
+}
+
+.item__parameteres {
+    display: flex;
+    padding-bottom: 3%;
+
+    @include tablets {
+        justify-content: center;
+        padding-bottom: 2%;
+        padding-left: 19%;
+    }
+}
+
+.item__parameter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+
+    @include phones {
+        margin-right: 8%;
+    }
+}
+
+.item__parameter-value {
+    font-weight: 700;
+    font-size: rem(18px);
+    color: black;
+}
+
+.item__order {
+    display: flex;
+    height: rem(60px);
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.item__price {
+    font-size: rem(60px);
+    font-weight: 300;
+    padding-right: 17%;
+    white-space: nowrap;
+
+    @include tablets {
+        padding-right: 7%;
+    }
+}
+
+.slider__arrow {
+    text-decoration: none;
+    border: 15px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-left-color: black;
+    border-right-width: 0;
+    position: relative;
+
+    @include tablets {
+        right: 9%;
+        margin-top: rem(-150px);
+
+        &--left {
+            left: 9%;
+        }
+    }
+
+    @include phones {
+        margin-top: rem(-230px);
+        // margin-top: -40%;
+    }
+
+    &--left {
+        transform: rotate(180deg);
+    }
+
+    &:after {
+        content: "";
+        border: 15px solid transparent;
+        width: 0px;
+        height: 0px;
+        border-left-color: white;
+        border-right-width: 0;
+        position: absolute;
+        top: -15px;
+        left: -16px;
+    }
+}
