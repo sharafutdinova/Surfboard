@@ -92,10 +92,10 @@
 .item__parameter {
     display: flex;
     flex-direction: column;
-    margin-right: 15%;
+    margin-right: 10%;
 
     @include phones {
-        margin-right: 8%;
+        margin-right: 4%;
     }
 }
 

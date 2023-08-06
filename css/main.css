@@ -770,10 +770,10 @@ img {
 .item__parameter {
   display: flex;
   flex-direction: column;
-  margin-right: 15%; }
+  margin-right: 10%; }
   @media screen and (max-width: 480px) {
     .item__parameter {
-      margin-right: 8%; } }
+      margin-right: 4%; } }
 
 .item__parameter-value {
   font-weight: 700;
