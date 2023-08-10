@@ -927,3 +927,52 @@ img {
   position: relative;
   left: 38%;
   margin: 2.4444444444rem 40px 80px; }
+
+.team__members {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start; }
+
+.team__member {
+  padding: 10px 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1; }
+
+.team__member-img {
+  width: 220px;
+  height: 290px; }
+
+.team__member--name {
+  font-weight: 700;
+  font-size: 21px;
+  color: black;
+  position: relative;
+  padding-right: 20px; }
+
+.team__member--name::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  border: 6px solid transparent;
+  border-bottom: 10px solid black; }
+
+.team__member__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.team__member__info--specialization {
+  font-weight: 400;
+  font-size: 18px;
+  color: black; }
+
+.team__member__info--descr {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center; }
