@@ -285,40 +285,47 @@
             <section class="section order-section">
                 <div class="container">
                     <h2 class="section__title">закажите доску</h2>
-                    <form class="form">
+                    <form class="form" id="form">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="name" required>
+                                    <div class="error"></div>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="phone" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="street">
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="number" class="form__input" name="house">
+                                    <div class="error"></div>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="corps">
+                                    <div class="error"></div>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="number" class="form__input" name="flat">
+                                    <div class="error"></div>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="number" class="form__input" name="floor">
+                                    <div class="error"></div>
                                 </label>
                             </div>
                         </div>
@@ -326,31 +333,34 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea type="text" class="form__input form__input--textarea"></textarea>
+                                    <textarea type="text" class="form__input form__input--textarea"
+                                        name="comment" required></textarea>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__controls">
                                 <label class="radio">
-                                    <input type="radio" name="option" class="radio__elem">
+                                    <input type="radio" name="optionCash" class="radio__elem">
                                     <div class="radio__visible"></div>
                                     <div class="radio__title">Оплата наличными</div>
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="option" class="radio__elem">
+                                    <input type="radio" name="optionCard" class="radio__elem">
                                     <div class="radio__visible"></div>
                                     <div class="radio__title">Оплата картой</div>
                                 </label>
                             </div>
                             <div class="form__controls">
                                 <label class="radio radio--checkbox">
-                                    <input type="checkbox" class="radio__elem">
+                                    <input type="checkbox" class="radio__elem" name="toCall">
                                     <div class="radio__visible"></div>
                                     <div class="radio__title">Не перезванивать</div>
                                 </label>
                             </div>
                             <div class="form__btns">
-                                <input type="submit" value="Заказать" class="btn">
-                                <input type="reset" value="Очистить" class="btn btn--theme--transparent">
+                                <input type="submit" value="Заказать" class="btn" id="sendButton">
+                                <input type="reset" value="Очистить" class="btn btn--theme--transparent"
+                                    id="clearButton">
                             </div>
                         </div>
                     </form>
@@ -449,6 +459,7 @@
         </nav>
     </div>
     <script src="./modal.js"></script>
+    <script src="./form.js"></script>
 </body>
 
 </html>
