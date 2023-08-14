@@ -1,5 +1,5 @@
 .team__container {
-    padding: 30px 0;
+    padding: rem(30px) 0;
 }
 
 .team__members {
@@ -7,37 +7,74 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: start;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__members--desktop {
+    display: flex;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.team__members--tablets {
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
 }
 
 .team__member {
-    padding: 10px 15px 15px 0;
+    padding: rem(10px) rem(15px) rem(15px) 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex: 1;
+
+    &.active .team__member--name::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 10px;
+        border: 6px solid transparent;
+        border-top: 10px solid black;
+    }
 }
 
 .team__member-img {
-    width: 220px;
-    height: 290px;
+    width: rem(220px);
+    height: rem(290px);
 }
 
 .team__member--name {
     font-weight: 700;
-    font-size: 21px;
+    font-size: rem(21px);
     color: black;
     position: relative;
-    padding-right: 20px;
+    padding-right: rem(20px);
+    cursor: pointer;
 }
 
 .team__member--name::after {
     content: '';
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: rem(10px);
     border: 6px solid transparent;
     border-bottom: 10px solid black;
+}
+
+.team__member__content {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
 }
 
 .team__member__info {
@@ -49,12 +86,12 @@
 
 .team__member__info--specialization {
     font-weight: 400;
-    font-size: 18px;
+    font-size: rem(18px);
     color: black;
 }
 
 .team__member__info--descr {
     font-weight: 300;
-    font-size: 18px;
+    font-size: rem(18px);
     text-align: center;
 }

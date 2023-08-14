@@ -6,15 +6,22 @@
     }
 }
 
-.slider {
+.bx-wrapper {
+    border: none;
+    box-shadow: none;
+}
+
+.bx-viewport {
     height: 70vh;
     padding: rem(50px) 0;
+    background: $light-grey;
 }
 
 .slider__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 rem(50px);
 
     @include tablets {
         flex-direction: column;
@@ -146,7 +153,6 @@
 
     @include phones {
         margin-top: rem(-230px);
-        // margin-top: -40%;
     }
 
     &--left {

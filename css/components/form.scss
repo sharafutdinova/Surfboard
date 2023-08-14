@@ -62,6 +62,7 @@
     @include tablets {
         padding: rem(5px);
         min-height: rem(30px);
+
         &--textarea {
             height: rem(82px);
         }
@@ -90,4 +91,18 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.modal__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal__content {
+    padding: rem(5px) rem(5px) rem(25px) rem(5px);
+}
+
+.error {
+    color: red;
 }

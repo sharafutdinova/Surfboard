@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surfboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -144,94 +146,167 @@
             <section class="shop">
                 <div class="container shop_container">
                     <a class="slider__arrow slider__arrow--left" href="#"></a>
-                    <div class="container slider_container">
-                        <div class="slider">
-                            <ul class="slider__items">
-                                <li class="slider__item">
-                                    <div class="item__image-wrapper">
-                                        <img src="./img/Товар.png" alt="longboard" class="item__image">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <div class="item__image-wrapper">
+                                <img src="./img/longboard.png" alt="longboard" class="item__image">
+                            </div>
+                            <article class="item__content">
+                                <div class="menu__icon">
+                                    <img src="./img/click.png" alt="menu" class="menu__icon__image">
+                                    <div class="dropdown__menu">
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/length.png" alt="length" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Длина доски</div>
+                                                <div class="dropdown__item__param--value">от 2,5 м</div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/width.png" alt="width" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Ширина доски</div>
+                                                <div class="dropdown__item__param--value">от 40 см</div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/thickness.png" alt="thickness" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Толщина</div>
+                                                <div class="dropdown__item__param--value">8 см</div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/life time.png" alt="life time" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Срок службы</div>
+                                                <div class="dropdown__item__param--value">5 лет</div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/weight.png" alt="weight" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Вес</div>
+                                                <div class="dropdown__item__param--value">7-8 кг</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <article class="item__content">
-                                        <div class="menu__icon">
-                                            <img src="./img/click.png" alt="menu" class="menu__icon__image">
-                                            <div class="dropdown__menu">
-                                                <div class="dropdown__item">
-                                                    <div class="dropdown__item__icon">
-                                                        <img src="./img/length.png" alt="length" class="param__image">
-                                                    </div>
-                                                    <div class="dropdown__item__param">
-                                                        <div class="dropdown__item__param--text">Длина доски</div>
-                                                        <div class="dropdown__item__param--value">от 2,5 м</div>
-                                                    </div>
-                                                </div>
-                                                <div class="dropdown__item">
-                                                    <div class="dropdown__item__icon">
-                                                        <img src="./img/width.png" alt="width" class="param__image">
-                                                    </div>
-                                                    <div class="dropdown__item__param">
-                                                        <div class="dropdown__item__param--text">Ширина доски</div>
-                                                        <div class="dropdown__item__param--value">от 40 см</div>
-                                                    </div>
-                                                </div>
-                                                <div class="dropdown__item">
-                                                    <div class="dropdown__item__icon">
-                                                        <img src="./img/thickness.png" alt="thickness"
-                                                            class="param__image">
-                                                    </div>
-                                                    <div class="dropdown__item__param">
-                                                        <div class="dropdown__item__param--text">Толщина</div>
-                                                        <div class="dropdown__item__param--value">8 см</div>
-                                                    </div>
-                                                </div>
-                                                <div class="dropdown__item">
-                                                    <div class="dropdown__item__icon">
-                                                        <img src="./img/life time.png" alt="life time"
-                                                            class="param__image">
-                                                    </div>
-                                                    <div class="dropdown__item__param">
-                                                        <div class="dropdown__item__param--text">Срок службы</div>
-                                                        <div class="dropdown__item__param--value">5 лет</div>
-                                                    </div>
-                                                </div>
-                                                <div class="dropdown__item">
-                                                    <div class="dropdown__item__icon">
-                                                        <img src="./img/weight.png" alt="weight" class="param__image">
-                                                    </div>
-                                                    <div class="dropdown__item__param">
-                                                        <div class="dropdown__item__param--text">Вес</div>
-                                                        <div class="dropdown__item__param--value">7-8 кг</div>
-                                                    </div>
-                                                </div>
+                                </div>
+                                <h1 class="item__title">Лонгборд 2.0</h1>
+                                <div class="item__text">
+                                    <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
+                                        разгребаться на волны и ехать. Размер и плавучесть доски позволяет
+                                        брать
+                                        очень маленькие и пологие волны и не спеша, не прилагая особых
+                                        усилий
+                                        ехать
+                                        по ним.
+                                    </p>
+                                </div>
+                                <div class="item__parameteres">
+                                    <div class="item__parameter">
+                                        <div class="item__parameter-name">Длина доски</div>
+                                        <div class="item__parameter-value">от 2,5 метров</div>
+                                    </div>
+                                    <div class="item__parameter">
+                                        <div class="item__parameter-name">Ширина доски</div>
+                                        <div class="item__parameter-value">от 40 сантиметров</div>
+                                    </div>
+                                </div>
+                                <div class="item__order">
+                                    <div class="item__price">7000 ₽</div>
+                                    <a href="#" class="btn">Заказать</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slider__item">
+                            <div class="item__image-wrapper">
+                                <img src="./img/shortboard.png" alt="longboard" class="item__image">
+                            </div>
+                            <article class="item__content">
+                                <div class="menu__icon">
+                                    <img src="./img/click.png" alt="menu" class="menu__icon__image">
+                                    <div class="dropdown__menu">
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/length.png" alt="length" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Длина доски</div>
+                                                <div class="dropdown__item__param--value">от 1,5 м</div>
                                             </div>
                                         </div>
-                                        <h1 class="item__title">Лонгборд 2.0</h1>
-                                        <div class="item__text">
-                                            <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
-                                                разгребаться на волны и ехать. Размер и плавучесть доски позволяет
-                                                брать
-                                                очень маленькие и пологие волны и не спеша, не прилагая особых
-                                                усилий
-                                                ехать
-                                                по ним.
-                                            </p>
-                                        </div>
-                                        <div class="item__parameteres">
-                                            <div class="item__parameter">
-                                                <div class="item__parameter-name">Длина доски</div>
-                                                <div class="item__parameter-value">от 2,5 метров</div>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/width.png" alt="width" class="param__image">
                                             </div>
-                                            <div class="item__parameter">
-                                                <div class="item__parameter-name">Ширина доски</div>
-                                                <div class="item__parameter-value">от 40 сантиметров</div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Ширина доски</div>
+                                                <div class="dropdown__item__param--value">от 30 см</div>
                                             </div>
                                         </div>
-                                        <div class="item__order">
-                                            <div class="item__price">7000 ₽</div>
-                                            <a href="#" class="btn">Заказать</a>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/thickness.png" alt="thickness" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Толщина</div>
+                                                <div class="dropdown__item__param--value">8 см</div>
+                                            </div>
                                         </div>
-                                    </article>
-                                </li>
-                            </ul>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/life time.png" alt="life time" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Срок службы</div>
+                                                <div class="dropdown__item__param--value">5 лет</div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__item">
+                                            <div class="dropdown__item__icon">
+                                                <img src="./img/weight.png" alt="weight" class="param__image">
+                                            </div>
+                                            <div class="dropdown__item__param">
+                                                <div class="dropdown__item__param--text">Вес</div>
+                                                <div class="dropdown__item__param--value">7-8 кг</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1 class="item__title">Шортборд</h1>
+                                <div class="item__text">
+                                    <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют
+                                        быстро набирать скорость, делать различные трюки на волне, включая
+                                        резкие повороты и развороты, флоатеры (проезды по самому гребню волны),
+                                        различные прыжки с вращениями или без, а также катание в трубах.
+                                    </p>
+                                </div>
+                                <div class="item__parameteres">
+                                    <div class="item__parameter">
+                                        <div class="item__parameter-name">Длина доски</div>
+                                        <div class="item__parameter-value">от 1,5 метров</div>
+                                    </div>
+                                    <div class="item__parameter">
+                                        <div class="item__parameter-name">Ширина доски</div>
+                                        <div class="item__parameter-value">от 30 сантиметров</div>
+                                    </div>
+                                </div>
+                                <div class="item__order">
+                                    <div class="item__price">12000 ₽</div>
+                                    <a href="#" class="btn">Заказать</a>
+                                </div>
+                            </article>
                         </div>
                     </div>
                     <a class="slider__arrow slider__arrow--right" href="#"></a>
@@ -241,38 +316,93 @@
                 <div class="container team__container">
                     <h2 class="section__title">Команда</h2>
                     <div class="team__section">
-                        <ul class="team__members">
+                        <ul class="team__members team__members--desktop">
                             <li class="team__member">
                                 <img src="./img/Rectangle 4.png" alt="team member" class="team__member-img"></img>
                                 <div class="team__member--name">Борис Федорович</div>
-                                <div class="team__member__info">
-                                    <div class="team__member__info--specialization">Главный технолог</div>
-                                    <div class="team__member__info--descr">Отвечает за материалы и разработку досок
+                                <div class="team__member__content">
+                                    <div class="team__member__info">
+                                        <div class="team__member__info--specialization">Главный технолог</div>
+                                        <div class="team__member__info--descr">Отвечает за материалы и разработку досок
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="team__member">
                                 <img src="./img/Rectangle 3.png" alt="team member" class="team__member-img"></img>
                                 <div class="team__member--name">Ольга Невзорова</div>
-                                <div class="team__member__info">
-                                    <div class="team__member__info--specialization">Дизайнер</div>
-                                    <div class="team__member__info--descr">Создает дизайн серфбордов</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info">
+                                        <div class="team__member__info--specialization">Дизайнер</div>
+                                        <div class="team__member__info--descr">Создает дизайн серфбордов</div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="team__member">
                                 <img src="./img/Rectangle 1.png" alt="team member" class="team__member-img"></img>
                                 <div class="team__member--name">Ингвар Нильсон</div>
-                                <div class="team__member__info">
-                                    <div class="team__member__info--specialization">Спортсмен</div>
-                                    <div class="team__member__info--descr">Участвует в разработке серфбордов</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info">
+                                        <div class="team__member__info--specialization">Спортсмен</div>
+                                        <div class="team__member__info--descr">Участвует в разработке серфбордов</div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="team__member">
                                 <img src="./img/Rectangle 2.png" alt="team member" class="team__member-img"></img>
                                 <div class="team__member--name">Екатерина Иванова</div>
-                                <div class="team__member__info">
-                                    <div class="team__member__info--specialization">Тестировщик</div>
-                                    <div class="team__member__info--descr">Отвечает за разработку новых продуктов</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info">
+                                        <div class="team__member__info--specialization">Тестировщик</div>
+                                        <div class="team__member__info--descr">Отвечает за разработку новых продуктов
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="team__members team__members--tablets">
+                            <li class="team__member">
+                                <div class="team__member--name">Борис Федорович</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info">
+                                        <img src="./img/Rectangle 4.png" alt="team member"
+                                            class="team__member-img"></img>
+                                        <div class="team__member__info--specialization">Главный технолог</div>
+                                        <div class="team__member__info--descr">Отвечает за материалы и разработку досок
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__member--name">Ольга Невзорова</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info">
+                                        <img src="./img/Rectangle 3.png" alt="team member"
+                                            class="team__member-img"></img>
+                                        <div class="team__member__info--specialization">Дизайнер</div>
+                                        <div class="team__member__info--descr">Создает дизайн серфбордов</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__member--name">Ингвар Нильсон</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info"><img src="./img/Rectangle 1.png" alt="team member"
+                                            class="team__member-img"></img>
+                                        <div class="team__member__info--specialization">Спортсмен</div>
+                                        <div class="team__member__info--descr">Участвует в разработке серфбордов</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__member--name">Екатерина Иванова</div>
+                                <div class="team__member__content">
+                                    <div class="team__member__info"> <img src="./img/Rectangle 2.png" alt="team member"
+                                            class="team__member-img"></img>
+                                        <div class="team__member__info--specialization">Тестировщик</div>
+                                        <div class="team__member__info--descr">Отвечает за разработку новых продуктов
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -547,10 +677,28 @@
             </ul>
         </nav>
     </div>
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Отправить письмо не удалось, повторите запрос позже!
+            </div>
+            <div class="modal__button-container">
+                <a href="#" class="btn app-close-modal">Закрыть</a>
+            </div>
+        </div>
+    </div>
+
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="./slider.js"></script>
     <script src="./modal.js"></script>
+    <script src="./acco.js"></script>
     <script src="./tabs.js"></script>
     <script src="./form.js"></script>
+
 </body>
 
 </html>

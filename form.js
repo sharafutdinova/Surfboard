@@ -1,27 +1,35 @@
-const sendButton = document.querySelector("#sendButton");
 const clearButton = document.querySelector("#clearButton");
 const form = document.querySelector("#form");
+const modal = $("#modal");
+const content = modal.find(".modal__content");
 
-sendButton.addEventListener("click", e => {
+$(".form").submit(e => {
     e.preventDefault();
     if (validateForm(form)) {
-        const data = {
-            name: form.elements.name.value,
-            phone: form.elements.phone.value,
-            comment: form.elements.comment.value,
-            to: form.elements.name.value + '@mail.ru'
-        }
-        const xhr = new XMLHttpRequest();
-        xhr.responseType = 'json';
-        xhr.open('POST', "https://webdev-api.loftschool.com/sendmail");
-        xhr.setRequestHeader('content-type', 'application/json');
-        xhr.send(JSON.stringify(data));
-        xhr.addEventListener('load', () => {
-            if (xhr.response.status) {
-                console.log('Всё ок!');
+        $.ajax({
+            url: "https://webdev-api.loftschool.com/sendmail",
+            method: "post",
+            data: {
+                name: form.elements.name.value,
+                phone: form.elements.phone.value,
+                comment: form.elements.comment.value,
+                to: form.elements.name.value + '@mail.ru'
+            },
+            success: (data) => {
+                content.text(data.message);
+                modal.removeClass("error");
             }
+        }).fail(function () {
+            content.text("Отправить письмо не удалось, повторите запрос позже!");
+            modal.addClass("error");
         });
+        Fancybox.show([{ src: "#modal", type: "inline" }]);
     }
+});
+
+$(".app-close-modal").click(e => {
+    e.preventDefault();
+    Fancybox.close();
 })
 
 function validateForm(form) {

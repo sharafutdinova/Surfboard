@@ -1,6 +1,7 @@
 .shop {
     height: 85vh;
     background: #F8FAF9;
+    width: 100%;
 
     @include tablets {
         height: 108vh;
