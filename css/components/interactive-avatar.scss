@@ -5,6 +5,7 @@
     overflow: hidden;
     position: relative;
     margin-right: rem(0px);
+    cursor: pointer;
 
     &--active {
         border: rem(6px) solid transparent;

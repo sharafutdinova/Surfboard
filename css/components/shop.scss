@@ -1,13 +1,13 @@
 .shop {
-    height: 70vh;
+    height: 85vh;
     background: #F8FAF9;
 
     @include tablets {
-        height: 103vh;
+        height: 108vh;
     }
 
     @include phones {
-        height: 80vh;
+        height: 105vh;
     }
 }
 
