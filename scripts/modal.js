@@ -12,3 +12,8 @@ closeButton.addEventListener("click", e => {
     e.preventDefault();
     fullscreenMenu.style.display = "none";
 })
+
+$(".menu__link").click(e => {
+    e.preventDefault();
+    fullscreenMenu.style.display = "none";
+});

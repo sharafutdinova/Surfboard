@@ -1,7 +1,7 @@
-const isTablets = window.matchMedia("(max-width: 768px)").matches;
-const isMobl = window.matchMedia("(max-width: 480px)").matches;
+const isTablets = $(window).width() <= 768;
+const isMobl = $(window).width() <= 480;
 const measureWidth = item => {
-    let reqItemWidth = 0;
+    let reqItemWidth = 500;
     const container = item.closest(".products-menu");
     const screenWidth = $(window).width();
     const titleBlocks = container.find(".products-menu__title");
@@ -12,7 +12,6 @@ const measureWidth = item => {
     if (isMobl) {
         reqItemWidth = screenWidth - titleBlocks.width();
     }
-    else reqItemWidth = 500;
     return {
         container: reqItemWidth,
         textContainer: ""

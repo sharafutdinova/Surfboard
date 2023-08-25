@@ -5,6 +5,7 @@
     flex-direction: column;
     display: none;
     margin: 10px;
+    z-index: 100;
 
     @include tablets {
         display: inline-flex;
