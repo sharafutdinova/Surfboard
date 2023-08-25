@@ -1,15 +1,11 @@
 .hero {
     background: url("../img/main-bg.png") center top / cover no-repeat;
-    height: 70vh;
     color: white;
+    height: 100%;
+    padding-top: 0;
 
     @include tablets {
         background: url("../img/main-bg.png") right top / cover no-repeat;
-        height: 98vh;
-    }
-
-    @include phones {
-        height: 76vh;
     }
 }
 
@@ -19,6 +15,10 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(24px) 0 rem(65px);
+    @include tablets {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .hero__title-section {

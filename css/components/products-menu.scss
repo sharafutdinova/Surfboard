@@ -1,0 +1,56 @@
+.products-menu-section {
+    position: relative;
+    background: url("../img/Slider 1.png") center center / cover no-repeat;
+}
+
+.products-menu-section__title {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    color: white;
+    opacity: 1;
+}
+
+.products-menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.products-menu__item {
+    display: flex;
+    min-width: 102px;
+    @include phones {
+        min-width: 90px;
+    }
+}
+
+.products-menu__title {
+    position: relative;
+    writing-mode: vertical-rl;
+}
+
+.products-menu__image {
+    height: 100%;
+}
+
+.products-menu__text {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    left: 25px;
+}
+
+.products-menu__content {
+    width: 0;
+    overflow: hidden;
+    position: relative;
+    background: rgba(51, 54, 51, 0.6);
+    color: white;
+}
+
+.products-menu__container {
+    padding: 15px 15px 30px;
+}

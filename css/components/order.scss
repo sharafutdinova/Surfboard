@@ -2,17 +2,9 @@
     background: url("../img/order.png") center center / cover no-repeat;
     color: white;
     padding: rem(55px) 0;
-    height: 70vh;
+    height: 100%;
 
     .section__title {
         color: inherit;
-    }
-
-    @include tablets {
-        height: 103vh;
-    }
-
-    @include phones {
-        height: 82vh;
     }
 }

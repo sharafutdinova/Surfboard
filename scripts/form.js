@@ -1,6 +1,7 @@
 const clearButton = document.querySelector("#clearButton");
 const form = document.querySelector("#form");
 const modal = $("#modal");
+const container = modal.find(".modal__container");
 const content = modal.find(".modal__content");
 
 $(".form").submit(e => {

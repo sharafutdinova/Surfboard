@@ -3,7 +3,8 @@
     top: 20%;
     right: 3%;
     z-index: $z-fixed-menu;
-    @include tablets{
+
+    @include tablets {
         display: none;
     }
 }
@@ -38,5 +39,23 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.fixed-menu--shadowed {
+
+    .fixed-menu__item {
+        .fixed-menu__link {
+
+            &:before {
+                background: black;
+            }
+        }
+
+        &--active {
+            .fixed-menu__link {
+                border-color: black;
+            }
+        }
     }
 }

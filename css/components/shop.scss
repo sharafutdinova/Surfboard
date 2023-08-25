@@ -1,15 +1,7 @@
 .shop {
-    height: 85vh;
+    height: 100%;
     background: #F8FAF9;
     width: 100%;
-
-    @include tablets {
-        height: 108vh;
-    }
-
-    @include phones {
-        height: 105vh;
-    }
 }
 
 .shop_container {
