@@ -5,13 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .player__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include phones {
+        width: 390px;
+    }
 }
 
 .player__splash {
@@ -25,6 +28,9 @@
     height: 35px;
     background: rgb(80, 80, 80);
     width: 660px;
+    @include phones {
+        width: 390px;
+    }
 }
 
 .player__start {
@@ -48,6 +54,9 @@
         left: 0;
         background: #626262;
     }
+    @include phones {
+        padding: 0 15px;
+    }
 }
 
 .player__playback {
@@ -66,4 +75,7 @@
 .player__duration{
     padding: 0 30px;
     width: rem(230px);
+    @include phones {
+        padding: 0 15px;
+    }
 }

@@ -129,7 +129,7 @@
     white-space: nowrap;
 
     @include tablets {
-        padding-right: 7%;
+        padding-right: 4%;
     }
 }
 
@@ -142,21 +142,21 @@
     border-right-width: 0;
     position: relative;
 
+    &--left {
+        transform: rotate(180deg);
+    }
+
     @include tablets {
-        right: 9%;
+        right: 0;
         margin-top: rem(-150px);
 
         &--left {
-            left: 9%;
+            left: 0;
         }
     }
 
     @include phones {
         margin-top: rem(-230px);
-    }
-
-    &--left {
-        transform: rotate(180deg);
     }
 
     &:after {

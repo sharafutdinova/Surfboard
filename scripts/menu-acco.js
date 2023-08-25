@@ -1,11 +1,11 @@
+const isTablets = window.matchMedia("(max-width: 768px)").matches;
 const measureWidth = item => {
     const screenWidth = $(window).width();
     let reqItemWidth = 0;
     const container = item.closest(".products-menu");
     const titleBlocks = container.find(".products-menu__title");
     const titleWidth = titleBlocks.width() * titleBlocks.length;
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
-    if (isMobile) {
+    if (isTablets) {
         reqItemWidth = screenWidth - titleWidth;
     }
     else reqItemWidth = 500;
